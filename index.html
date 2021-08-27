@@ -1,71 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  </head>
-  <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="Images/logo.png" width="112" height="60">
+</head>
+
+<body>
+  <nav class="navbar py-4 px-6 has-shadow"  id="burger" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="Images/logo.png" >
+      </a>
+  
+      <a role="button" class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  
+    <div id="nav-links" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Features
           </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
+  
+          <div class="navbar-dropdown">
             <a class="navbar-item">
-              Home
+              About
             </a>
-      
             <a class="navbar-item">
-              Documentation
+              Jobs
             </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
           </div>
         </div>
-      </nav>
-  </body>
+        <a class="navbar-item">
+          Examples
+        </a>
+  
+        <a class="navbar-item">
+          Pricing
+        </a>
+        
+        <a class="navbar-item">
+          Demo
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Resources
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-warning-light">
+              <strong>Login</strong>
+            </a>
+            <a class="button is-rounded is-danger-light">
+              Start Free Trial
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container has-text-centered has-text-weight-bold py-6 my-6">
+    <h1 class="title is-1 is-size-1-mobile has-text-weight-bold">
+    Everything you need to sell courses, webinars, downloads, and memberships.
+    </h1>
+  </div>
+  
+    <p class="subtitle has-text-centered pt-1 ">
+      Never worry about getting a bunch of different tools to “talk to each other” again.
+    </p>
+    <div class="buttons is-centered">
+    <button class="button is-link is-rounded is-large">Get Started For Free</button>
+    </div>
+    <div class="container">
+      <div>
+        <h2 class="title has-text-weight-bold"> Sell Your Work </h2>
+        <p>With everything on a single platform, you don’t have to choose just one type of digital product.</p>
+        <article class="message is-white">
+          <div class="message-header">
+            <p class="subtitle is-size-4 has-text-weight-bold">Outline courses</p>
+          </div>
+          <div class="columns">
+          <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </article>
+        <section>
+          <div class="container">
+            <img src="Images/john.jpg" height="10" alt="John Saunders" class="">
+            </div>
+        </section>
+      </div>
+  </div>
+  
+  <script src="index.js"> </script>
+</body>
+
 </html>
